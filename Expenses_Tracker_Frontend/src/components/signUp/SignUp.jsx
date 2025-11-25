@@ -40,7 +40,7 @@ export default function Signup() {
     };
 
     axios
-      .post(`${BASE_URL}/api/users/signUp`, data, {
+      .post(`${BASE_URL}/api/users/register`, data, {
         headers: { "Content-Type": "multipart/form-data" },
       })
       .then((result) => {

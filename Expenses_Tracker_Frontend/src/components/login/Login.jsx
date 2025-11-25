@@ -33,7 +33,7 @@ export default function Login() {
         return res.json();
       })
       .then((result) => {
-        if (result.success) {
+        if (result.token || result.data) {
           dispatch({ type: "setUser", payload: result.data });
           e.target.reset();
           toast.success("You successfully logged in!");
