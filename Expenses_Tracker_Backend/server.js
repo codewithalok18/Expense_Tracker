@@ -24,8 +24,9 @@ DBConnection();
 app.use(
   cors({
     origin: [
-      "http://localhost:3000",
-      "https://expensestracker-frontend.onrender.com",
+          "http://localhost:5174",                      // Vite dev
+      // "https://YOUR-NETLIFY-NAME.netlify.app",   
+      "https://expense-trackerf.netlify.app"   
     ],
     exposedHeaders: ["token"],
   })
